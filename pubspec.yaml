@@ -1,0 +1,30 @@
+name: accident_alert_app
+description: A new Flutter project.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ─── Core functionality ────────────────────────────────────────────────────
+  geolocator: ^14.0.1           # GPS / location
+  sensors_plus: ^6.1.1          # accelerometer, etc.
+  permission_handler: ^12.0.0+1 # runtime permissions (SMS, location)
+  shared_preferences: ^2.5.3    # persistent logs
+  flutter_tts: ^4.0.2           # text‑to‑speech
+  intl: ^0.20.2                 # date‑time formatting
+
+  # ─── UI / Icons ────────────────────────────────────────────────────────────
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
